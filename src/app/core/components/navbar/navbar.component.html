@@ -1,0 +1,21 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <h2>Wealth Life</h2>
+    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <mat-nav-list class="nav-list">
+      <a mat-list-item routerLink="profile">Perfil</a>
+      <a mat-list-item routerLink="exercices">Rotina de exercícios</a>
+      <a mat-list-item routerLink="diet">Dieta</a>
+      <a mat-list-item routerLink="lecture">Leitura e filmografia</a>
+      <a mat-list-item routerLink="lecture">Lista de alunos</a>
+      <a mat-list-item routerLink="logout">Logout</a>
+    </mat-nav-list>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      <img [src]="iconWL" alt="WL icon" width="50"/>
+    </button>
+  </div>
+
+</mat-drawer-container>
