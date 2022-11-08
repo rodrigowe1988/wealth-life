@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+
+  @Input()
+  name = '';
 
   constructor() { }
 
@@ -15,5 +18,9 @@ export class NavbarComponent implements OnInit {
   iconWL: string = '../assets/images/wl-logo.webp'
 
   showFiller = false;
+
+  logout(): void {
+    alert("Você saiu da sua conta!")
+  }
 
 }

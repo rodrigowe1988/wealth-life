@@ -5,12 +5,18 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { LectureComponent } from './components/mental-body/lecture/lecture.component';
 import { DietComponent } from './components/material-body/diet/diet.component';
 import { UserListComponent } from './components/user-list/user-list.component';
+import { ExercisesRoutineComponent } from './components/material-body/exercises-routine/exercises-routine.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { CommonModule } from '@angular/common';
+import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
-  declarations: [NavbarComponent, LectureComponent, DietComponent, UserListComponent],
+  declarations: [NavbarComponent, LectureComponent, DietComponent, UserListComponent, ExercisesRoutineComponent, ProfileComponent, LoginComponent, HomeComponent],
   imports: [
     RouterModule,
-    MaterialModule
+    MaterialModule,
+    CommonModule
   ],
   exports: [NavbarComponent],
 })

@@ -27,3 +27,9 @@ button {
 img {
   border-radius: 50px;
 }
+
+.profile {
+  margin-left: 35px;
+  width: 100px;
+  border: 50%;
+}

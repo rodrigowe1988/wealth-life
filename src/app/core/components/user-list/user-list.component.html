@@ -1,1 +1,25 @@
-<p>user-list works!</p>
+<table class="styled-table teste">
+	<thead>
+	  <tr>
+		 <th>Nome</th>
+		 <th>Idade</th>
+		 <th>Sexo</th>
+		 <th>Telefone</th>
+		 <th>Altura</th>
+		 <th>Peso</th>
+		 <th>IMC</th>
+	  </tr>
+	</thead>
+	<tbody >
+		 <tr class="active-row" *ngFor="let user of users">
+			<td>{{user.name}}</td>
+			<td>{{user.age}}</td>
+			<td>{{user.gender}}</td>
+			<td>{{user.phone}}</td>
+			<td>{{user.height}}</td>
+			<td>{{user.weight}}</td>
+			<td>{{user.imc}}</td>
+		 </tr>
+	</tbody>
+ </table>
+
