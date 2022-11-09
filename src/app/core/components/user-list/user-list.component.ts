@@ -17,7 +17,6 @@ export class UserListComponent implements OnInit {
       phone: '999999999',
       height: 1.76,
       weight: 84,
-      imc: 25,
     },
     {
       name: 'Rodrigo',
@@ -26,7 +25,6 @@ export class UserListComponent implements OnInit {
       phone: '999999999',
       height: 1.76,
       weight: 84,
-      imc: 25,
     },
     {
       name: 'Rodrigo',
@@ -35,7 +33,6 @@ export class UserListComponent implements OnInit {
       phone: '999999999',
       height: 1.76,
       weight: 84,
-      imc: 25,
     },
   ];
 

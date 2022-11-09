@@ -33,3 +33,7 @@ img {
   width: 100px;
   border: 50%;
 }
+
+.mouseOver {
+  cursor: pointer;
+}

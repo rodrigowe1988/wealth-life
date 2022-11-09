@@ -1,7 +1,7 @@
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
-    <img class="profile" src="https://avatars.githubusercontent.com/u/60714212?v=4" alt="profile image" srcset="https://avatars.githubusercontent.com/u/60714212?v=4">
-    <p>{{name}}</p>
+    <img class="profile mouseOver" src="https://avatars.githubusercontent.com/u/60714212?v=4" alt="profile image" srcset="https://avatars.githubusercontent.com/u/60714212?v=4" routerLink="profile">
+    <p routerLink="profile" class="mouseOver">{{name}}</p>
     <mat-nav-list class="nav-list">
       <a mat-list-item routerLink="profile">Perfil</a>
       <a mat-list-item routerLink="exercises">Rotina de exercícios</a>
@@ -11,7 +11,6 @@
       <a mat-list-item routerLink="login" (click)="logout()">Logout</a>
     </mat-nav-list>
   </mat-drawer>
-
   <div class="example-sidenav-content">
     <button type="button" mat-button (click)="drawer.toggle()">
       <img [src]="iconWL" alt="WL icon" width="50"/>

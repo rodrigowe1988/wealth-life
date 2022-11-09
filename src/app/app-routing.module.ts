@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ErrorNotFoundComponent } from './core/components/error-not-found/error-not-found.component';
 import { HomeComponent } from './core/components/home/home.component';
 import { LoginComponent } from './core/components/login/login.component';
 import { DietComponent } from './core/components/material-body/diet/diet.component';
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'diet', component: DietComponent},
   {path: 'lecture', component: LectureComponent},
   {path: 'userList', component: UserListComponent},
-  {path: 'login', component: LoginComponent}
+  {path: 'login', component: LoginComponent},
+  {path: '**', component: ErrorNotFoundComponent}
 ];
 
 @NgModule({

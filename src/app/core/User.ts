@@ -5,5 +5,4 @@ export interface User {
 	phone : String;
 	height: number;
 	weight: number;
-	imc: number;
 }
