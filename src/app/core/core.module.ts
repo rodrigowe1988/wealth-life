@@ -10,9 +10,10 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
+import { FormsComponent } from './components/forms/forms.component';
 
 @NgModule({
-  declarations: [NavbarComponent, LectureComponent, DietComponent, UserListComponent, ExercisesRoutineComponent, ProfileComponent, LoginComponent, HomeComponent],
+  declarations: [NavbarComponent, LectureComponent, DietComponent, UserListComponent, ExercisesRoutineComponent, ProfileComponent, LoginComponent, HomeComponent, FormsComponent],
   imports: [
     RouterModule,
     MaterialModule,
