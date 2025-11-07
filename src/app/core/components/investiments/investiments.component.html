@@ -19,7 +19,7 @@
     </div>
   </div>
 </div>
-<hr/>
+<hr />
 <div class="grafico-anual-container">
   <div class="grafico">
     <canvas id="graficoAnual"></canvas>
@@ -34,9 +34,11 @@
       </tr>
       <tr *ngFor="let ano of years; let i = index">
         <td>{{ ano }}</td>
-        <td>{{ valores[i] | number:'1.2-2' }}</td>
-        <td [class.positivo]="variacoesPercentuais[i].includes('+')"
-            [class.negativo]="variacoesPercentuais[i].includes('-')">
+        <td>{{ valores[i] | number : "1.2-2" }}</td>
+        <td
+          [class.positivo]="+variacoesPercentuais[i].replace('%', '') > 0"
+          [class.negativo]="+variacoesPercentuais[i].replace('%', '') < 0"
+        >
           {{ variacoesPercentuais[i] }}
         </td>
       </tr>
