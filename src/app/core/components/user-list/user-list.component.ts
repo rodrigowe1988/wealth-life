@@ -36,9 +36,7 @@ export class UserListComponent implements OnInit {
     },
   ];
 
-
   ngOnInit(): void {}
-
 
   showImc(user: User): number {
     return user.weight / (user.height * user.height);

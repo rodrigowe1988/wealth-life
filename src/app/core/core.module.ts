@@ -11,9 +11,10 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormsComponent } from './components/forms/forms.component';
+import { InvestimentsComponent } from './components/investiments/investiments.component';
 
 @NgModule({
-  declarations: [NavbarComponent, LectureComponent, DietComponent, UserListComponent, ExercisesRoutineComponent, ProfileComponent, LoginComponent, HomeComponent, FormsComponent],
+  declarations: [NavbarComponent, LectureComponent, DietComponent, UserListComponent, ExercisesRoutineComponent, ProfileComponent, LoginComponent, HomeComponent, FormsComponent, InvestimentsComponent],
   imports: [
     RouterModule,
     MaterialModule,

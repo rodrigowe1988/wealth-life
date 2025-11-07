@@ -1,3 +1,4 @@
+import { InvestimentsComponent } from './core/components/investiments/investiments.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ErrorNotFoundComponent } from './core/components/error-not-found/error-not-found.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'diet', component: DietComponent },
   { path: 'lecture', component: LectureComponent },
   { path: 'userList', component: UserListComponent },
+  { path: 'investiments', component: InvestimentsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'forms', component: FormsComponent },
   { path: '**', component: ErrorNotFoundComponent },

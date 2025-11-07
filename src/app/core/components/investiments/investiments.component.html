@@ -1,0 +1,45 @@
+<img src="../../../../assets/images/logo_financas.png" id="logo" />
+
+<div class="carteira-container">
+  <div class="grafico">
+    <canvas id="carteiraTotal"></canvas>
+  </div>
+
+  <div class="lista">
+    <div *ngFor="let item of listaCarteira" class="item">
+      <div class="cor" [style.background-color]="item.cor"></div>
+      <div class="info">
+        <p class="nome">{{ item.label }}</p>
+        <p class="valor">
+          R$ {{ item.valor | number : "1.2-2" }} -<b>
+            {{ item.percentual }}%
+          </b>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr/>
+<div class="grafico-anual-container">
+  <div class="grafico">
+    <canvas id="graficoAnual"></canvas>
+  </div>
+
+  <div class="tabela">
+    <table>
+      <tr>
+        <th>Ano</th>
+        <th>Patrimônio (R$)</th>
+        <th>Variação</th>
+      </tr>
+      <tr *ngFor="let ano of years; let i = index">
+        <td>{{ ano }}</td>
+        <td>{{ valores[i] | number:'1.2-2' }}</td>
+        <td [class.positivo]="variacoesPercentuais[i].includes('+')"
+            [class.negativo]="variacoesPercentuais[i].includes('-')">
+          {{ variacoesPercentuais[i] }}
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
